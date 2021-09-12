@@ -1,6 +1,6 @@
-# vue-categories
+# Vue microfrontend template for [Podium.js](https://podium-lib.io/)
 
-## Project setup
+## update
 ```
 npm install
 ```
