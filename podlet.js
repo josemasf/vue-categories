@@ -16,7 +16,7 @@ const port = process.env.PORT || 7108;
 
 // Basic definition of the podlet
 const podlet = new Podlet({
-  name: "vueCategories", // required
+  name: pjson.podletName, // required
   version: pjson.version, // required
   pathname: "/", // required
   manifest: "/manifest.json", // optional, defaults to '/manifest.json'
@@ -46,7 +46,7 @@ app.use(podlet.middleware());
 
 // add HTML to send. This is the div ID in public/index.html
 app.get(podlet.content(), (req, res) => {
-  res.status(200).podiumSend('<div id="vue-categories"></div>');
+  res.status(200).podiumSend(`<div id="${pjson.name}"></div>`);
 });
 
 // generate the podlet manifest

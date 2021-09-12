@@ -1,24 +1,32 @@
 # Vue microfrontend template for [Podium.js](https://podium-lib.io/)
 
-## update
-```
-npm install
+## Description
+This template has been created to facilitate and speed up the creation of microfrontend with the podium.js framework.
+
+### Configuration
+
+1.Rename repository name and podlet name in package.json
+
+```javascript
+"name": "vue-microfront-podium",
+"podletName": "vueMicrofrontPodium",
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+2.Update container id in public/index.html
+```html
+<body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="vue-microfront-podium"></div> <!-- Update this -->
+    <!-- built files will be auto injected -->
+  </body>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+3.Review process.env
+
+```
+#ENTRY_BASE_URL=https://production.app
+ENTRY_BASE_URL=http://localhost:7181  
+PORT=7181
+```

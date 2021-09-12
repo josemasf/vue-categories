@@ -1,17 +1,14 @@
 {
-  "name": "vue-categories",
-  "version": "0.1.1",
+  "name": "vue-microfront-podium",
+  "podletName": "vueMicrofrontPodium",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "set NODE_ENV=production && node podlet.js ",
-    "start:dev": "set NODE_ENV=development && node podlet.js ",
-    "deploy:release": "npm run release && npm run deploy",
-    "deploy": "npm version patch && npm run build && npm run deploy:after ",
-    "deploy:after": "firebase deploy && npm run deploy:end ",
-    "deploy:end": "echo \"Deploy finsished\" "
+    "start:dev": "set NODE_ENV=development && node podlet.js "   
   },
   "dependencies": {
     "@podium/browser": "^1.0.0",
