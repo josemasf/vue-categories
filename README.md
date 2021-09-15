@@ -1,4 +1,4 @@
-# Vue microfrontend template for [Podium.js](https://podium-lib.io/)
+# Vue v2 microfrontend template for [Podium.js](https://podium-lib.io/)
 
 ## Description
 This template has been created to facilitate and speed up the creation of microfrontend with the podium.js framework.
