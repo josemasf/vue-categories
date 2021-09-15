@@ -1,14 +1,14 @@
 {
   "name": "vue-microfront-podium",
   "podletName": "vueMicrofrontPodium",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "set NODE_ENV=production && node podlet.js ",
-    "start:dev": "set NODE_ENV=development && node podlet.js "   
+    "start:dev": "set NODE_ENV=development && node podlet.js "
   },
   "dependencies": {
     "@podium/browser": "^1.0.0",
